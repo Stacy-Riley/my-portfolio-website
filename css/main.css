@@ -229,6 +229,9 @@ h2 {
 /*******************************************************/
 
 .portfolio{
+  width: 100%;
+  padding: 0;
+  margin: 0;
   /*class positioned on html element */
   /*Background image*/
   background-color: #e0dde8;
@@ -236,13 +239,16 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 500px;
+  
 }
 
+.portfolio h1 {
+  margin-bottom: 20px;
+}
 .project {
   width: 300;
   height: auto
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   /*Below 3 lines are centering the child element .portrait */
   display: block;
   margin-left: auto;
@@ -255,8 +261,8 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   /*spacing between img and wording */
-  margin-top: 25px;
-  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 25px;
   /*"Netflix code" - Below 3 used to size images inside of the parent 
   container .project */
   height: auto;
@@ -266,7 +272,7 @@ h2 {
 
 .project-container  {
   text-align: center;
-  padding-top: 10px;
+  
 }
 
 /*Wording under project images */
@@ -276,6 +282,30 @@ h2 {
   text-decoration: none;
   color: #5b2b5b;
   font-variant: small-caps;
+}
+/*******************************************/
+/*Javascript Clock Element */
+
+.embed-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  height: 0; 
+  overflow: hidden;
+  margin: 0 auto 30px auto; 
+} 
+
+.embed-container iframe, 
+/*.embed-container object, 
+.embed-container embed*/ { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0;
+  bottom: 0;
+}
+
+.space {
+  height: 5px;
 }
 
 /*******************************************************/
@@ -406,23 +436,22 @@ h2 {
   /**** Portfolio Page Styles - Tablet ****/
   /*******************************************************/
    .portfolio {
-    padding-bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   /*Wording under project images */
   .project-container a {
     font-size: 1.5em;
   }
-  .project-container {
-    display: grid;
-    /* Designed for 2-columns at the same size, using "auto"*/
-    grid-template-columns: auto auto;
-    /* Designed for 2-rows at the same size, using "auto",
-    use px for diff. sizing */
-    grid-template-rows: auto auto;
-    /*Spacing between rows and columns */
-    grid-gap: 5px;
-  }
+  .embed-container { 
+    position: relative; 
+    padding-bottom: 26.25%; 
+    height: 0; 
+    overflow: hidden;
+    margin: 0 auto 10px auto; 
+} 
   
+ 
   /*******************************************************/
   /**** Contact Page Styles - Tablet ****/
   /*******************************************************/
@@ -494,15 +523,15 @@ h2 {
   /**** Portfolio Page Styles -Desktop ****/
   /*******************************************************/
   .portfolio {
-    padding-bottom: 300px;
+    padding-bottom: 10px;
 
   }
   .project-container {
     /*See notes in tablet section */
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    grid-gap: 5px;
+    grid-template-rows: auto auto auto;
+    grid-gap: 5%;
     margin: auto;
     width: 80%;
   }
@@ -519,6 +548,15 @@ h2 {
     color: #5b2b5b;
     font-variant: small-caps;
   }
+  /*JS clock project */
+   .embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden;
+    margin: 0 auto 10px auto; 
+  } 
+
 }
 
 /* ==========================================================================
