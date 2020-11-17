@@ -227,29 +227,24 @@ h2 {
 /*******************************************************/
 /** Portfolio Page **/
 /*******************************************************/
-
+/*class positioned on html element */
 .portfolio{
   width: 100%;
   padding: 0;
   margin: 0;
-  /*class positioned on html element */
-  /*Background image*/
   background-color: #e0dde8;
-  /*background-image: url("../img/bernard-hermant-X-Bu9X6gok0-unsplash2.jpg");*/
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
 }
 
 .portfolio h1 {
   margin-bottom: 20px;
 }
+
 .project {
-  width: 300;
+  width: 350;
   height: auto
   padding-bottom: 20px;
-  /*Below 3 lines are centering the child element .portrait */
+  /*Below 3 lines are centering the 
+  child element .portrait */
   display: block;
   margin-left: auto;
   margin-right: auto; 
@@ -263,7 +258,8 @@ h2 {
   /*spacing between img and wording */
   margin-top: 5px;
   margin-bottom: 25px;
-  /*"Netflix code" - Below 3 used to size images inside of the parent 
+  /*"Netflix code" - Below 3 used to size 
+  images inside of the parent 
   container .project */
   height: auto;
   object-fit: cover;
@@ -275,7 +271,7 @@ h2 {
   
 }
 
-/*Wording under project images */
+/*Wording above project images */
 .project-container a {
   font-weight: bold;
   text-align: center;
@@ -283,15 +279,242 @@ h2 {
   color: #5b2b5b;
   font-variant: small-caps;
 }
-/*******************************************/
-/*Javascript Clock Element */
 
-.embed-container { 
+/*******************************************************/
+/** Folder Syles on Portfolio Page **/
+/*******************************************************/
+
+.folder-1{
+ -webkit-perspective: 500px;
+  perspective: 500px;
+  width: 280px;
+  height: 80px;
+  background: #A16DA8;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  border-top-right-radius: 5px;
+  cursor: pointer;
+ /*-webkit-transition: all 400ms ease;
+  transition: all 400ms ease;*/
+}
+  /*Tab*/
+  .folder-1::before{
+    width: 138px;
+    height: 20px;
+    content: 'Javascript Projects';
+    letter-spacing: .5px;
+    text-align: center;
+    background: #A16DA8;
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  /*Top or front facing side of folder */
+  .folder-1::after{
+    width: 280px;
+    height: 190px;
+    position: absolute;
+    content: '';
+    background: #8D6DA8;
+    /*background: darken(tomato, 7%);*/
+    top: 40px;
+    left: -1px;
+    box-shadow: 0 0 20px 2px fade(#000, 30%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-transform: rotateX(-10deg);
+    transform: rotateX(-10deg);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  }
+
+
+.folder-inside-1{
+  width: 260px;
+  height: 180px;
+  position: absolute;
+  background: #fff;
+  top: 20px;
+  left: 10px;
+  box-shadow: 0 0 5px 5px fade(#000, 5%);
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  border: 1px solid #ddd;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  }
+  .folder-inside-1:before{
+    content: '';
+  background: -webkit-repeating-linear-gradient(145deg, #fff, #fff 10px, #333 7px, #333 20px);
+  background: repeating-linear-gradient(-3deg, #fff, #fff 19px, #333 7px, #333 20px);
+    position: absolute;
+    top: -37px;
+    left: 45px;
+    width: 170px;
+    height: 255px;
+    color: #343434;
+    font-size: 60px;
+    line-height: 30px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 0.15;
+  }
+ 
+ /*Creates movement for entire folder */
+ .folder-1:hover{
+   -webkit-transform: translate(-50%, -52%);
+   transform: translate(-50%, -52%);
+  }
+  /*Creates movement for the "after" folder or 
+  most front facing side */
+  .folder-1:hover:after {
+     -webkit-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);    
+  }
+/*Creates movement for paper inside the folder */
+  .folder-inside-1:hover{
+  -webkit-transform: rotate(-7deg) translateY(-15%);
+  transform: rotate(-7deg) translateY(-15%);
+  }  
+ /*******************************************************/
+.folder-2{
+ -webkit-perspective: 500px;
+  perspective: 500px;
+  width: 280px;
+  height: 80px;
+  background: #A16DA8;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+  border-top-right-radius: 5px;
+  cursor: pointer;
+ /*-webkit-transition: all 400ms ease;
+  transition: all 400ms ease;*/
+}
+  /*Tab*/
+  .folder-2::before{
+    width: 138px;
+    height: 20px;
+    content: 'Website Projects';
+    letter-spacing: .5px;
+    text-align: center;
+    background: #A16DA8;
+    position: absolute;
+    top: -15px;
+    left: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  /*Top or front facing side of folder */
+  .folder-2::after{
+    width: 280px;
+    height: 190px;
+    position: absolute;
+    content: '';
+    background: #8D6DA8;
+    /*background: darken(tomato, 7%);*/
+    top: 40px;
+    left: -1px;
+    box-shadow: 0 0 20px 2px fade(#000, 30%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-transform: rotateX(-10deg);
+    transform: rotateX(-10deg);
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  }
+
+
+.folder-inside-2{
+  width: 260px;
+  height: 180px;
+  position: absolute;
+  background: #fff;
+  top: 20px;
+  left: 10px;
+  box-shadow: 0 0 5px 5px fade(#000, 5%);
+  -webkit-transform: rotate(-1deg);
+  transform: rotate(-1deg);
+  border: 1px solid #ddd;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  }
+  .folder-inside-2:before{
+    content: '';
+  background: -webkit-repeating-linear-gradient(145deg, #fff, #fff 10px, #333 7px, #333 20px);
+  background: repeating-linear-gradient(-3deg, #fff, #fff 19px, #333 7px, #333 20px);
+    position: absolute;
+    top: -37px;
+    left: 45px;
+    width: 170px;
+    height: 255px;
+    color: #343434;
+    font-size: 60px;
+    line-height: 30px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    opacity: 0.15;
+  }
+ 
+ /*Creates movement for entire folder */
+ .folder-2:hover{
+   -webkit-transform: translate(-50%, -52%);
+   transform: translate(-50%, -52%);
+  }
+  /*Creates movement for the "after" folder or 
+  most front facing side */
+  .folder-2:hover:after {
+     -webkit-transform: rotateX(-20deg);
+    transform: rotateX(-20deg);    
+  }
+/*Creates movement for paper inside the folder */
+  .folder-inside-2:hover{
+  -webkit-transform: rotate(-7deg) translateY(-15%);
+  transform: rotate(-7deg) translateY(-15%);
+  }  
+/*******************************************************/
+/** Javascript Project Page **/
+/*******************************************************/
+.js-project-container {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+}
+
+/*Wording above project images */
+.js-project-container a {
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #5b2b5b;
+  font-variant: small-caps;
+  font-size: 1.3em;
+}
+#embed-container-clock { 
   position: relative; 
-  padding-bottom: 56.25%; 
-  height: 0; 
+  padding-bottom: 10.25%; 
+  height: auto; 
   overflow: hidden;
-  margin: 0 auto 30px auto; 
+  margin: 0 auto 0 auto; 
+
+} 
+
+#embed-container-calculator { 
+  position: relative; 
+  padding-bottom: 10.25%; 
+  overflow: hidden;
+  margin: 0 auto 10px auto; 
 } 
 
 .embed-container iframe, 
@@ -406,9 +629,9 @@ h2 {
   /*******************************************************/
   .about-img {
   /*Rounded Corners of image */
-  border-radius: 40px;
-  display: inline;
-  width: 30%;
+    border-radius: 40px;
+    display: inline;
+    width: 30%;
   }
   .about-content-container {
     display: flex;
@@ -427,9 +650,9 @@ h2 {
     padding-top: 15px;
   }
   .about-content-container p {
-  color: #5b2b5b;
-  font-size: 1.5em;
-  line-height: 1em;
+    color: #5b2b5b;
+    font-size: 1.5em;
+    line-height: 1em;
   }
   
   /*******************************************************/
@@ -449,14 +672,109 @@ h2 {
     height: 0; 
     overflow: hidden;
     margin: 0 auto 10px auto; 
-} 
-  
+  } 
+ /*******************************************************/
+  /**** Javascript Project Page Styles - Tablet ****/
+  /*******************************************************/
+
+/*Wording above project images */
+  .js-project-container a {
+    font-size: 1.5em;
+  }
+  #embed-container-clock { 
+    padding-bottom: 10.25%; 
+  } 
+
+  #embed-container-calculator { 
+   padding-bottom: 60.25%; 
+  } 
+
+  .space {
+    height: 10px;
+  }
+
+  #calculator {
+    width: 400px;
+    height: 400px;
+  }
  
   /*******************************************************/
   /**** Contact Page Styles - Tablet ****/
   /*******************************************************/
   .contact-email a {
     font-size: 1.2em;
+  }
+
+/********************************************************/
+/**** Portfolio Folder Syles - Tablet ****/
+  /*******************************************************/
+.folder-1{
+  width: 320px;
+  height: 140px; 
+  top: 75%;
+  left: 50%;
+}
+  /*Tab*/
+  .folder-1::before{
+    width: 145px;
+    height: 20px;
+    letter-spacing: .6px;   
+    top: -15px;
+  }
+
+  /*Top or front facing side of folder */
+  .folder-1::after{
+    width: 320px;
+    height: 190px;
+  }
+/*sheet of paper */
+.folder-inside-1{
+  width: 290px;
+  height: 180px;
+  top: 20px;
+  left: 15px;
+  }
+  /*lines*/
+  .folder-inside-1:before{
+    top: -40px;
+    left: 60px;
+    width: 180px;
+    height: 280px;
+  }
+ 
+ /**************************************/
+ .folder-2{
+  width: 320px;
+  height: 140px; 
+  top: 140%;
+  left: 50%;
+}
+  /*Tab*/
+  .folder-2::before{
+    width: 145px;
+    height: 20px;
+    letter-spacing: .6px;   
+    top: -15px;
+  }
+
+  /*Top or front facing side of folder */
+  .folder-2::after{
+    width: 320px;
+    height: 190px;
+  }
+/*sheet of paper */
+.folder-inside-2{
+  width: 290px;
+  height: 180px;
+  top: 20px;
+  left: 15px;
+  }
+  /*lines*/
+  .folder-inside-2:before{
+    top: -40px;
+    left: 60px;
+    width: 180px;
+    height: 280px;
   }
 }
 /* =====================================================
@@ -467,6 +785,8 @@ h2 {
   .about-content-container div {
     padding-bottom: 80px;
     padding-top: 0;
+  }
+
   }
 
 /* =====================================================
@@ -524,7 +844,6 @@ h2 {
   /*******************************************************/
   .portfolio {
     padding-bottom: 10px;
-
   }
   .project-container {
     /*See notes in tablet section */
@@ -535,12 +854,11 @@ h2 {
     margin: auto;
     width: 80%;
   }
-  /*Wording under project images */
+  /*Wording above project images */
   .project-container a {
     font-size: 1.5em;
-  }
-  
-  /*Wording under project images */
+  } 
+  /*Wording above project images */
   .project-container a {
     font-weight: bold;
     text-align: center;
@@ -557,7 +875,43 @@ h2 {
     margin: 0 auto 10px auto; 
   } 
 
+ /*******************************************************/
+  /**** Javascript Project Page Styles - Desktop ****/
+  /*******************************************************/
+
+/*Wording above project images */
+  .js-project-container a {
+    font-size: 2.2em;
+  }
+  #embed-container-clock { 
+    padding-bottom: 3.25%; 
+  } 
+  #embed-container-calculator { 
+    padding-bottom: 40.25%; 
+    margin: 0;
+  } 
+  .space {
+    height: 10px;
+  }
+  #calculator {
+   width: 380px;
+   height: 400px;
+  }
+  /*******************************************************/
+  /**** Portfolio Folder Styles - Desktop ****/
+  /*******************************************************/
+.folder-1{
+  top: 50%;
+  left: 25%;
 }
+
+ /**************************************/
+ .folder-2{
+  top: 50%;
+  left: 75%;
+}
+
+} /** @media end bracket **/
 
 /* ==========================================================================
    Helper classes
