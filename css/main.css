@@ -335,7 +335,7 @@ h2 {
   transition: all 400ms ease;
   }
 
-
+/*sheet of paper */
 .folder-inside-1{
   width: 260px;
   height: 180px;
@@ -350,6 +350,7 @@ h2 {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   }
+  /*lines on paper */
   .folder-inside-1:before{
     content: '';
   background: -webkit-repeating-linear-gradient(145deg, #fff, #fff 10px, #333 7px, #333 20px);
@@ -395,11 +396,8 @@ h2 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  
   border-top-right-radius: 5px;
   cursor: pointer;
- /*-webkit-transition: all 400ms ease;
-  transition: all 400ms ease;*/
 }
   /*Tab*/
   .folder-2::before{
@@ -435,7 +433,7 @@ h2 {
   transition: all 400ms ease;
   }
 
-
+/*sheet of paper */
 .folder-inside-2{
   width: 260px;
   height: 180px;
@@ -450,6 +448,7 @@ h2 {
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   }
+  /*lines on paper */
   .folder-inside-2:before{
     content: '';
   background: -webkit-repeating-linear-gradient(145deg, #fff, #fff 10px, #333 7px, #333 20px);
@@ -734,7 +733,7 @@ h2 {
   top: 20px;
   left: 15px;
   }
-  /*lines*/
+  /*lines on paper*/
   .folder-inside-1:before{
     top: -40px;
     left: 60px;
@@ -769,7 +768,7 @@ h2 {
   top: 20px;
   left: 15px;
   }
-  /*lines*/
+  /*lines on paper*/
   .folder-inside-2:before{
     top: -40px;
     left: 60px;
@@ -900,14 +899,16 @@ h2 {
   /*******************************************************/
   /**** Portfolio Folder Styles - Desktop ****/
   /*******************************************************/
+/*Placement*/
 .folder-1{
-  top: 50%;
+  top: 55%;
   left: 25%;
 }
 
- /**************************************/
+ /*****************/
+ /*Placement*/
  .folder-2{
-  top: 50%;
+  top: 55%;
   left: 75%;
 }
 
