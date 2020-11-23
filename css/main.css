@@ -305,6 +305,7 @@ h2 {
   .folder-1::before{
     width: 138px;
     height: 20px;
+    color: white;
     content: 'Javascript Projects';
     letter-spacing: .5px;
     text-align: center;
@@ -318,12 +319,11 @@ h2 {
 
   /*Top or front facing side of folder */
   .folder-1::after{
-    width: 280px;
+    width: 283px;
     height: 190px;
     position: absolute;
     content: '';
     background: #8D6DA8;
-    /*background: darken(tomato, 7%);*/
     top: 40px;
     left: -1px;
     box-shadow: 0 0 20px 2px fade(#000, 30%);
@@ -403,6 +403,7 @@ h2 {
   .folder-2::before{
     width: 138px;
     height: 20px;
+    color: white;
     content: 'Website Projects';
     letter-spacing: .5px;
     text-align: center;
@@ -416,7 +417,7 @@ h2 {
 
   /*Top or front facing side of folder */
   .folder-2::after{
-    width: 280px;
+    width: 283px;
     height: 190px;
     position: absolute;
     content: '';
@@ -537,7 +538,6 @@ h2 {
 .contact {
   /*class positioned on html element */
   background-color: #e0dde8;
-  /*background-image: url("../img/bernard-hermant-X-Bu9X6gok0-unsplash2.jpg");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -710,7 +710,7 @@ h2 {
 .folder-1{
   width: 320px;
   height: 140px; 
-  top: 75%;
+  top: 35%;
   left: 50%;
 }
   /*Tab*/
@@ -723,7 +723,7 @@ h2 {
 
   /*Top or front facing side of folder */
   .folder-1::after{
-    width: 320px;
+    width: 325px;
     height: 190px;
   }
 /*sheet of paper */
@@ -745,7 +745,7 @@ h2 {
  .folder-2{
   width: 320px;
   height: 140px; 
-  top: 140%;
+  top: 65%;
   left: 50%;
 }
   /*Tab*/
@@ -758,7 +758,7 @@ h2 {
 
   /*Top or front facing side of folder */
   .folder-2::after{
-    width: 320px;
+    width: 325px;
     height: 190px;
   }
 /*sheet of paper */
@@ -785,6 +785,19 @@ h2 {
     padding-bottom: 80px;
     padding-top: 0;
   }
+
+  /*Placement*/
+.folder-1{
+  top: 55%;
+  left: 25%;
+}
+
+ /*****************/
+ /*Placement*/
+ .folder-2{
+  top: 55%;
+  left: 75%;
+}
 
   }
 
